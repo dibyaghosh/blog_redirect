@@ -15,14 +15,15 @@ MathJax.Hub.Config({
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
   <style>
 
 .masthead {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  margin-bottom: 4rem;
+  padding-left: 3rem;
+  margin-bottom: 0rem;
   font-family: "Quattrocento Sans", sans-serif;
 }
 
@@ -40,6 +41,24 @@ MathJax.Hub.Config({
   color: #999;
 }
 
+.social-icons {
+  float: right;
+}
+
+.social-icons a {
+  color: #999;
+  font-size: 1rem;
+}
+
+@media (max-width: 30em) {
+  .social-icons {
+    float: left;
+    padding-top: 0px;
+  }
+  .menu-content {
+    margin-bottom: 5px;
+  }
+}
    .column-to-row-captioned {
       width: 100%;
       display: grid;
@@ -80,7 +99,6 @@ MathJax.Hub.Config({
 <header class="masthead">
     <h3 class="masthead-title">
       <a href="{{ site.github.url }}/">{{ site.title }}</a>
-      <small class="masthead-subtitle">{{ site.description }}</small>
     </h3>
   </header>
 
@@ -107,9 +125,6 @@ MathJax.Hub.Config({
   <p>{{page.description}}</p>
  </d-title>
 
- <div id='navigation'>
-  <a href='{{ site.github.url }}/'> Variational Bayes </a>
- </div> 
  <d-article>
 {{ content }}
 
