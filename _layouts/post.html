@@ -22,11 +22,17 @@ MathJax.Hub.Config({
 .masthead {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 3rem;
+  padding-left: 0rem;
   margin-bottom: 0rem;
   font-family: "Quattrocento Sans", sans-serif;
 }
 
+@media(min-width: 750px) {
+     .masthead {
+      padding-left: 3rem;
+     }
+   }
+   
 .masthead a:hover {
   color:black;
 }
@@ -41,24 +47,11 @@ MathJax.Hub.Config({
   color: #999;
 }
 
-.social-icons {
-  float: right;
-}
-
-.social-icons a {
+.sharing-icons {
   color: #999;
-  font-size: 1rem;
+  font-size: 3em;
 }
 
-@media (max-width: 30em) {
-  .social-icons {
-    float: left;
-    padding-top: 0px;
-  }
-  .menu-content {
-    margin-bottom: 5px;
-  }
-}
    .column-to-row-captioned {
       width: 100%;
       display: grid;
