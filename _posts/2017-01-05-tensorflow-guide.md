@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "TensorFlow: A Beginner's Guide"
+tagline: "A simple guide from linear regression to convolutional neural networks in Tensorflow"
+description: "In this article, we familiarize the reader with the basics of Tensorflow by constructing various machine learning models from linear regression to convolutional neural networks."
 author: "Dibya Ghosh"
 categories: ml
 tags: [ml, tensorflow, mnist, regression]
