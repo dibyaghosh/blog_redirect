@@ -12,8 +12,34 @@ MathJax.Hub.Config({
 </script>
   <meta name="viewport" content="width=device-width, initial-scale=1" >
 <script src="{{ site.github.url }}/assets/js/template.v1.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
+
+.masthead {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 4rem;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+.masthead a:hover {
+  color:black;
+}
+
+.masthead-title a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #505050;
+}
+
+.masthead-subtitle {
+  color: #999;
+}
+
    .column-to-row-captioned {
       width: 100%;
       display: grid;
@@ -51,6 +77,14 @@ MathJax.Hub.Config({
   </style>
 </head>
 
+<header class="masthead">
+    <h3 class="masthead-title">
+      <a href="{{ site.github.url }}/">{{ site.title }}</a>
+      <small class="masthead-subtitle">{{ site.description }}</small>
+    </h3>
+  </header>
+
+  
 <d-front-matter>
 <script id="distill-front-matter" type="text/json">
 { 
@@ -67,11 +101,16 @@ MathJax.Hub.Config({
 </d-front-matter>
 
 
+
   <d-title>
     <h1> {{page.title}} </h1> 
   <p>{{page.description}}</p>
  </d-title>
-<d-article>
+
+ <div id='navigation'>
+  <a href='{{ site.github.url }}/'> Variational Bayes </a>
+ </div> 
+ <d-article>
 {{ content }}
 
 </d-article>
