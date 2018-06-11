@@ -21,7 +21,7 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'Variational Bayes'
-description:	       'Reviews, papers, and projects in RL, ML, and probability'
+description:	       'Adventures in RL, ML, and probability'
 author:              'Dibya Ghosh'
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
