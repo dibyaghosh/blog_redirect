@@ -11,6 +11,10 @@ MathJax.Hub.Config({
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
   <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
 <script src="{{ site.github.url }}/assets/js/template.v1.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
@@ -86,6 +90,9 @@ MathJax.Hub.Config({
     a.anchor-link {
       display: none;
     }
+    img{
+      max-width: 100%;
+    }
   </style>
 </head>
 
@@ -133,3 +140,9 @@ MathJax.Hub.Config({
   {% endif %}
 </d-appendix>
 
+<script>
+  $(document).ready(function(){
+    $(".proof_toggle").click(function(){$(this).closest('.proof_block').children('.proof').toggle();})
+    $('.proof').toggle();
+  });
+</script>
