@@ -94,6 +94,9 @@ MathJax.Hub.Config({
       max-width: 100%;
     }
   </style>
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
 </head>
 
 <header class="masthead">
