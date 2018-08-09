@@ -6,7 +6,7 @@ description: "In this article, we familiarize the reader with the basics of Tens
 author: "Dibya Ghosh"
 categories: ml
 tags: [ml, tensorflow, mnist, regression]
-image: tensorflow.jpg
+image: assets/img/tensorflow.jpg
 published: True
 ---
 
