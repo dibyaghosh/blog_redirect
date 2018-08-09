@@ -2,9 +2,9 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} | {{ site.description }}
+The RL Probabilist
     {% else %}
-      {{ page.title }} | {{ site.title }}
+      {{ page.title }}
     {% endif %}
   </title>
 
@@ -33,6 +33,6 @@
   {% include analytics.html %}
   {% endif %}
   <!-- Use Jekyll SEO plugin -->
-  {% seo %}
+  {% seo title=false %}
 
 </head>

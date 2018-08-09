@@ -4,6 +4,7 @@ title: Home
 ---
 
 {% for post in paginator.posts %}
+{% if post.published %}
 <div class="posts">
   <h1>
     <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
@@ -18,6 +19,7 @@ title: Home
     <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span>
   </p>
 </div>
+{% endif %}
 {% endfor %}
 
 <!-- Pagination links -->

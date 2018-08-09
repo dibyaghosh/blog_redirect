@@ -21,7 +21,7 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'The RL Probabilist'
-description:	       'Adventures in RL, ML, and probability'
+description:	       'A blog about reinforcement learning, machine learning, and probability by Dibya Ghosh'
 author:              'Dibya Ghosh'
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines

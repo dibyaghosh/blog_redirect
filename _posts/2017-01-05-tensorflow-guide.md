@@ -7,6 +7,7 @@ author: "Dibya Ghosh"
 categories: ml
 tags: [ml, tensorflow, mnist, regression]
 image: tensorflow.jpg
+published: True
 ---
 
 
