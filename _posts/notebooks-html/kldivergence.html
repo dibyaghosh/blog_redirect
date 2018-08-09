@@ -98,8 +98,7 @@
 <li>Minimizing the <strong>reverse KL</strong>: $\arg\min_{\theta} D_{KL}(Q_\theta\|P)$</li>
 </ol>
 <p>As it turns out, the two different objectives actually cause different types of approximations. We'll spend the next section discussing the qualitative behaviours of each approach. We'll investigate in the following setting: $P(X)$ is the bimodal distribution below. We'll try to approximate this with a normal distribution $Q(X) = \mathcal{N}(\mu, \sigma^2)$.</p>
-<p><img src="/assets/posts/kldivergence/p.png" style="width:100px">
-<img src="../assets/posts/kldivergence/p.png" alt=""></p>
+<p><img src="../assets/posts/kldivergence/p.png" alt=""></p>
 
 </div>
 </div>
@@ -134,8 +133,7 @@
 <blockquote><p>Wherever $P(\cdot)$ has high probability, $Q(\cdot)$ must also have high probability.</p>
 </blockquote>
 <p>We consider this <em>mean-seeking</em> behaviour, because the approximate distribution $Q$ must cover all the modes and regions of high probability in $P$. The optimal "approximate" distribution for our example is shown below. Notice that the approximate distribution centers itself between the two modes, so that it can have high coverage of both. The forward KL divergence does not penalize $Q$ for having high probability mass where $P$ does not.</p>
-<p><img src="/assets/posts/kldivergence/forwardkl.png" style="width:100px">
-<img src="../assets/posts/kldivergence/forwardkl.png" alt=""></p>
+<p><img src="../assets/posts/kldivergence/forwardkl.png" alt=""></p>
 
 </div>
 </div>
@@ -170,8 +168,7 @@
 </blockquote>
 <p>We consider this <em>mode-seeking</em> behaviour, because any sample from the approximate distribution $Q$ must lie within a mode of $P$ (since it's required that samples from $Q$ have high probability under $P$). Notice that unlike the forward KL objective, there's nothing requiring the approximate distribution to try to cover all the modes. The entropy term prevents the approximate distribution from collapsing to a very narrow mode; typically, behaviour when optimizing this objective is to find a mode of $P$ with high probability and wide support, and mimic it exactly.</p>
 <p>The optimal "approximate" distribution for our example is shown below. Notice that the approximate distribution essentially encompasses the right mode of $P$. The reverse KL divergence does not penalize $Q$ for not placing probability mass on the other mode of $P$.</p>
-<p><img src="/assets/posts/kldivergence/reversekl.png" style="width:100px">
-<img src="../assets/posts/kldivergence/reversekl.png" alt=""></p>
+<p><img src="../assets/posts/kldivergence/reversekl.png" alt=""></p>
 
 </div>
 </div>
