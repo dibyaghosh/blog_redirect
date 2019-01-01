@@ -29,16 +29,16 @@ body {
     font-size: 14px;
     line-height: 1.5rem;
   }
-  body h1 {
+  body h2 {
     font-size: 1.5rem;
   }
 }
 
-h1{
+h2 {
   font-size: 2rem;
 }
 
-h1 a {
+h2 a {
   text-decoration: none;
 }
 
@@ -82,7 +82,7 @@ hr {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 615px;
+  width: 720px;
 }
 
 /*48em*/
@@ -127,6 +127,7 @@ hr {
   overflow: hidden;
   border-radius: 5px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .thumbnail-container img{
