@@ -5,3 +5,5 @@ Gemfile.lock
 .DS_Store
 nohup.out
 .ipynb_checkpoints/
+vendor/
+.bundle
