@@ -8,6 +8,8 @@ categories: ml
 tags: [ml, tensorflow, mnist, regression]
 image: assets/img/tensorflow.jpg
 published: True
+redirect_to:
+  - https://dibyaghosh.com/blog/ml/tensorflow-guide.html
 ---
 
 
